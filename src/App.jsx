@@ -1,4 +1,4 @@
-
+import AboutMeMain from "./components/aboutMe/AboutMeMain";
 import HeroGradient from "./components/heroSction/HeroGradient";
 import HeroMain from "./components/heroSction/HeroMain";
 import SubHeroSection from "./components/heroSction/SubHeroSection";
@@ -9,10 +9,10 @@ function App() {
     <>
       <main className="font-body">
         <NavBarMain />
-
         <HeroMain />
-        <HeroGradient/>
-        <SubHeroSection/>
+        <HeroGradient />
+        <SubHeroSection />
+        <AboutMeMain />
       </main>
     </>
   );

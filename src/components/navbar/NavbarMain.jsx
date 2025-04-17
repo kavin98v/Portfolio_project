@@ -20,7 +20,7 @@ function NavBarMain() {
         <NavbarBtn />
       </div>
       <div
-        className="flex lg:hidden sm:block p-6 items-center justify-center]"
+        className="flex lg:hidden sm:block p-6 items-center justify-center"
         onClick={menuHandler}
       >
         <button className="text-2xl p-3  bg-black border border-orange rounded-full text-white">
