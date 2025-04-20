@@ -2,7 +2,7 @@ import React from 'react'
 
 function HealperSection() {
   return (
-    <div className='h-[100vh'></div>
+    <div className='h-[100vh]'></div>
   )
 }
 

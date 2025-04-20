@@ -2,7 +2,7 @@ import React from "react";
 
 function HeroText() {
   return (
-    <div className="flex flex-col gap-4 h-full justify-center md:text-left sm:text-center ">
+    <div className="flex flex-col gap-4 h-full justify-center md:text-left sm:text-center pl-5">
       <h2 className="lg:text-2xl sm:text-xl uppercase text-cyan">
         Web developer & UI/UX Engineer
       </h2>
