@@ -1,4 +1,5 @@
 import AboutMeMain from "./components/aboutMe/AboutMeMain";
+import ContactMain from "./components/contactMeSection/ContactMain";
 import HealperSection from "./components/HealperSection";
 import HeroGradient from "./components/heroSction/HeroGradient";
 import HeroMain from "./components/heroSction/HeroMain";
@@ -20,6 +21,7 @@ function App() {
         <SkillSectionMain/>
         <BottomSkills/>
         <ProjectsMain/>
+        <ContactMain/>
         <HealperSection/>
       </main>
     </>
