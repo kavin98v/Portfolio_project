@@ -9,6 +9,8 @@ import SingleSkill from "./SingleSkill";
 import { SiTailwindcss } from "react-icons/si";
 import { FaJava } from "react-icons/fa6";
 import { SiAdobephotoshop } from "react-icons/si";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../framerMotion/varient";
 
 const skills = [
   {
@@ -50,13 +52,24 @@ const skills = [
 ];
 
 function AllSkills() {
-  return <div>
+  return (
+    <div>
       <div className="flex items-center justify-center relative gap-2 max-w-[1200px] mx-auto ">
-        {skills.map((item, index)=>{
-          return <SingleSkill key={index} text={item.skill} icon={<item.icon/>}/>
+        {skills.map((item, index) => {
+          return (
+            <motion.div
+              variants={fadeIn("down", `0.${index}`)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: false, amount: 0 }}
+            >
+              <SingleSkill key={index} text={item.skill} icon={<item.icon />} />
+            </motion.div>
+          );
         })}
       </div>
-  </div>;
+    </div>
+  );
 }
 
 export default AllSkills;

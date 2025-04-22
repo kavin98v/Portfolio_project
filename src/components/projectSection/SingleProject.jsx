@@ -1,8 +1,14 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../framerMotion/varient";
 
 function SingleProject({ name, year, align, image, link }) {
   return (
-    <div
+    <motion.div
+      variants={fadeIn("up", 0.2)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0 }}
       className={`flex w-fill sm:flex-col-reverse items-center gap-5 ${
         align === "left" ? "md:flex-row" : "md:flex-row-reverse"
       } justify-end`}
@@ -28,7 +34,7 @@ function SingleProject({ name, year, align, image, link }) {
       <div className="max-h-[220px] max-w-[400px] rounded-xl overflow-hidden hover:scale-110 transform transition-all duration-500 ralative border border-white">
         <img src={image} atl="project image" className="w-full h-full" />
       </div>
-    </div>
+    </motion.div>
   );
 }
 
