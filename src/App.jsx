@@ -1,5 +1,6 @@
 import AboutMeMain from "./components/aboutMe/AboutMeMain";
 import ContactMain from "./components/contactMeSection/ContactMain";
+import FooterMain from "./components/footer/FooterMain";
 import HealperSection from "./components/HealperSection";
 import HeroGradient from "./components/heroSction/HeroGradient";
 import HeroMain from "./components/heroSction/HeroMain";
@@ -22,6 +23,7 @@ function App() {
         <BottomSkills/>
         <ProjectsMain/>
         <ContactMain/>
+        <FooterMain/>
         <HealperSection/>
       </main>
     </>

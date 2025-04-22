@@ -2,7 +2,7 @@ import React from "react";
 
 function AboutMeText() {
   return (
-    <div className="flex flex-col md:items-start sm:items-center md:text-left sm:text-center">
+    <div className="flex flex-col md:items-start sm:items-center md:text-left sm:text-cente" >
       <h2 className="text-6xl text-cyan mb-10 ">About Me</h2>
       <p className="text-white">
         think out of the box, and try to go beyond the tradition. A quick
