@@ -5,7 +5,7 @@ import HealperSection from "./components/HealperSection";
 import HeroGradient from "./components/heroSction/HeroGradient";
 import HeroMain from "./components/heroSction/HeroMain";
 import SubHeroSection from "./components/heroSction/SubHeroSection";
-import NavBarMain from "./components/navbar/NavBarMain";
+import NavBarMain from "./components/navbar/NavBarMain.jsx";
 import ProjectsMain from "./components/projectSection/ProjectsMain";
 import BottomSkills from "./components/skillSection/BottomSkills";
 import SkillSectionMain from "./components/skillSection/SkillSectionMain";
