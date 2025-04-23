@@ -50,7 +50,7 @@ function ContactForm() {
           type="text"
           placeholder="Your Name"
           required
-          className="h-12 rounderd-lg bg-lightBrown px-2 "
+          className="h-12 rounderd-lg bg-pureWhite/25 px-2 "
           value={name}
           onChange={handleName}
         />
@@ -59,7 +59,7 @@ function ContactForm() {
           type="email"
           placeholder="E-mail"
           required
-          className="h-12 rounderd-lg bg-lightBrown px-2 "
+          className="h-12 rounderd-lg bg-pureWhite/25 px-2 "
           value={email}
           onChange={handleEmail}
         />
@@ -68,7 +68,7 @@ function ContactForm() {
           placeholder="Message"
           rows="9"
           cols="50"
-          className="rounderd-lg bg-lightBrown p-2 "
+          className="rounderd-lg  bg-pureWhite/25 p-2 "
           value={message}
           onChange={handleMessage}
         />

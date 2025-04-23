@@ -17,14 +17,13 @@ function App() {
         <NavBarMain />
         <HeroMain />
         <HeroGradient />
-        <SubHeroSection />
+        {/* <SubHeroSection /> */}
         <AboutMeMain />
-        <SkillSectionMain/>
-        <BottomSkills/>
-        <ProjectsMain/>
-        <ContactMain/>
-        <FooterMain/>
-        <HealperSection/>
+        <SkillSectionMain />
+        <BottomSkills />
+        <ProjectsMain />
+        <ContactMain />
+        <FooterMain />
       </main>
     </>
   );

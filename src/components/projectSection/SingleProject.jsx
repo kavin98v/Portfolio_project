@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/varient";
 
-function SingleProject({ name, year, align, image, link }) {
+function SingleProject({ name, discription, align, image, link }) {
   return (
     <motion.div
       variants={fadeIn("up", 0.2)}
@@ -14,22 +14,22 @@ function SingleProject({ name, year, align, image, link }) {
       } justify-end`}
     >
       <div>
-        <h2 className="md:text-3xl sm:text-2xl text-orange ">{name}</h2>
+        <h2 className="md:text-3xl sm:text-2xl text-pureWhite ">{name}</h2>
         <h2
-          className={`text-xl font-thin text-white font-special sm:text-center ${
+          className={`text-lg font-thin text-white font-special sm:text-center ${
             align === "left" ? "md:text-right" : "md:text-left"
           }`}
         >
-          {year}
+          {discription}
         </h2>
-        <a
-          herf={link}
-          className={`text-lg flex gap-2 items-center text-cyan hover:text-orange transition-all duration-500 cursor-pointer sm:justify-self-center ${
+        <ul
+          className={`text-sm flex gap-2 items-center  transition-all duration-500 cursor-pointer sm:justify-self-center ${
             align === "left" ? "md:justify-self-end" : "md:justify-self-start"
           }`}
         >
-          view
-        </a>
+          {Array.isArray(link) &&
+            link.map((item, index) => <li className="text-cyan bg-lightBlue/30 rounded-lg p-1 px-2" key={index}>{item}</li>)}
+        </ul>
       </div>
       <div className="max-h-[220px] max-w-[400px] rounded-xl overflow-hidden hover:scale-110 transform transition-all duration-500 ralative border border-white">
         <img src={image} atl="project image" className="w-full h-full" />

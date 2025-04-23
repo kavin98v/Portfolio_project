@@ -6,33 +6,27 @@ import { fadeIn } from "../../framerMotion/varient";
 
 const projects = [
   {
-    name: "Vacation of Africa",
-    year: "Mar2022",
+    name: "Portfolio Website",
+    discription: "A responsive personal portfolio website showcasing projects, skills, and contact information with e mail service",
     align: "right",
     image: "../../public/images/website-img-1.jpg",
-    link: "#",
+    link: ["React","tailwind CSS","Framer Motion"]
   },
   {
-    name: "Moola App",
-    year: "Sept2022",
+    name: "Tic-Tac-Tor Game",
+    discription: "A simple yet interactive Tic Tac Toe game.Features responsive design, real-time player interaction, and basic game logic including win/tie detection. Developed to enhance logical thinking and front-end development skills.",
     align: "left",
-    image: "../../public/images/website-img-2.webp",
-    link: "#",
+    image: "../../public/images/website-img-2.jpg",
+    link: ["React","CSS","JavaScripts"],
   },
   {
-    name: "Tourzania",
-    year: "Jan2023",
+    name: "IMATS-99X",
+    discription: "IMATS-99x is a web application that can perform CRUD operations about employee data and track their work. ",
     align: "right",
     image: "../../public/images/website-img-3.jpg",
-    link: "#",
+    link: ["React","tailwind CSS","NodeJs", "MongoDB"],
   },
-  {
-    name: "Bank of Luck",
-    year: "May2024",
-    align: "left",
-    image: "../../public/images/website-img-4.jpg",
-    link: "#",
-  },
+  
 ];
 
 function ProjectsMain() {
@@ -52,7 +46,7 @@ function ProjectsMain() {
             <SingleProject
               key={index}
               name={item.name}
-              year={item.year}
+              discription={item.discription}
               align={item.align}
               image={item.image}
               link={item.link}

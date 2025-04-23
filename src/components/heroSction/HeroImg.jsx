@@ -15,10 +15,10 @@ function HeroImg() {
       <img
         src="../../public/images/myimage.png"
         alt="image kavindu"
-        className="max-h-[520px] w-auto rounded-3xl"
+        className="max-h-[520px] w-auto rounded-3xl opacity-50"
       />
-      <div className="absolute -z-10 flex justify-center items-center animate-pulse">
-        <PiHexagonThin className="md:h-[50%] sm:h-[120%] min-h-[500px] w-auto text-cyan blur-md animate-[spin_30s_linear_infinite]" />
+      <div className="absolute -z-10 flex justify-center items-center animate-pulse ">
+        {/* <PiHexagonThin className="md:h-[50%] sm:h-[120%] min-h-[500px] w-auto text-cyan blur-md animate-[spin_30s_linear_infinite]" /> */}
       </div>
     </motion.div>
   );

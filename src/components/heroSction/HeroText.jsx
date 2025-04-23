@@ -12,7 +12,7 @@ function HeroText() {
         viewport={{ once: false, amount: 0 }}
         className="lg:text-3xl sm:text-xl uppercase text-cyan"
       >
-        Web developer & UI/UX Engineer
+        Web developer & UI/UX Designer
       </motion.h2>
       <motion.h1
         variants={fadeIn("right", 0.4)}
